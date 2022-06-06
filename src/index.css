@@ -9,9 +9,10 @@
 }
 
 @font-face {
-	font-family: 'MenuText';
-	src: url('assets/Lato-Thin.woff2') format('woff2');
+	font-family: 'Lato-Bold';
+	src: url('assets/Lato-Bold.woff2') format('woff2');
 }
+
 
 @font-face {
 	font-family: 'Lato-Regular';
@@ -104,7 +105,7 @@ body {
 	margin-left: 2.5em;
 
 
-	font-family: 'MenuText';
+	font-family: 'Lato-Thin';
 	font-size: 1.5vw;
 
 	cursor: pointer, auto;
@@ -156,15 +157,12 @@ body {
 }
 
 .info {
-	font-family: 'Lato-Regular';
+	font-family: 'Lato-Bold';
 	font-size: 0.933vw;
 	margin: 0 auto;
 	color: white;
 	display: inline-block;
 	margin-right: 3em;
-
-	-webkit-text-stroke-width: 0.2px;
-	-webkit-text-stroke-color: white;
 
 }
 
@@ -184,7 +182,7 @@ body {
 #email {
 
 	text-align: right;
-	font-family: 'Lato-Regular';
+	font-family: 'Lato-Bold';
 	font-size: 1vw;
 	color: white;
 
@@ -195,11 +193,8 @@ body {
 	transform: translateY(-50%);
 
 	cursor: pointer, auto;
-}
 
-#email:hover{
-	-webkit-text-stroke-width: 0.8px;
-
+	transition-duration: 0.6s;
 }
 
 #bracket {
@@ -230,10 +225,6 @@ body {
 	.menu-button {
 		font-size: 2.5vw;
 	}
-	.bottom-bar{
-		background-color: green;
-	}
-
 	.info{
 		font-size: 0.9em;
 
@@ -250,6 +241,15 @@ body {
 @media only screen and (max-width: 910px) {
 	
 	.bottom-bar{display: none;}
+	.content{
+		width: 100%;
+	}
+	.heroText{
+		font-size: 35vw;
+	}
+	.menu-button{
+		font-size: 3.8vw;
+	}
 
 }
 
